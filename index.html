@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>Settings for test</title>
+</head>
+
+<body>
+    <div class="quiz-wrapper">
+        <div class="settings">
+            <form id="form">
+                <h2>Settings:</h2>
+                <div class="block-diapason">
+                    <span>Предмет: </span><select name="select" id="selector">
+                        <!--Supplement an id here instead of using 'name'-->
+                        <option value="math1">2022,Математика1,РК2(114 вопросов)</option>
+                        <option value="math2">РК 2 Элементарлық математика(100 вопросов) </option>
+                        <option value="math3">Элементарлык математика 100 - МиИ РК1(107 вопросов)</option>
+                    </select>
+                </div>
+                <div class="block-diapason">
+                    <span>Нижняя граница диапазона: </span><input id="lower" type="text" placeholder="" value="1"></br>
+                </div>
+                <div class="block-diapason">
+                    <span>Высшая граница диапазона: </span><input id="high" type="text" placeholder="" value="100"></br>
+                    <span style="color: red;"> P.S. Можете делать диапазоны 1-10, 10-20 и т.д. по 10 учить типо, так мб
+                        легче.</span>
+                </div>
+                <div class="block-diapason">
+                    <span>Кол-во вопросов: </span><input id="count" type="text"
+                        placeholder="" value="25"></br>
+                    <span style="color: red;">P.S. Условно делаете диапазон 1-100 и ставите 25 вопросов. Из этого диапазона будет 25 рандомных. </span>
+
+                </div>
+                <button class="settings__submit" id="submit_btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>
